@@ -2,3 +2,27 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  /*переменные для темной темы*/
+  --accent-color: #ff0070;
+  --bg-color: #000028;/*--main-color*/
+  --text-color: #DB00FF;/*hero-page-text-color*/
+  --text-color-main: #f1b2ce;
+  --padding-header: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
+  --outline-color: rgba(255, 0, 112, 0.4);
+
+ /* --padding: 2.66vw;*/
+  /*--accent-color: transparent;*/
+  
+}
+/*@media (max-width: 768px) {
+  :root {
+    --padding: 2vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --padding: 2.75vh;
+  }
+}*/
