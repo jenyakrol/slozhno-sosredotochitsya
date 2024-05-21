@@ -3,33 +3,35 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-/*:root {
-  /*переменные для светлой темы
-  --accent-color: #ff8dcb;
-} */
-
-:root.theme-light {
-  /* Переменные светлой темы */
-  --accent-color: #ff8dcb; 
-  --bg-color: #FFF1F7;
-  --text-color: #b3b3b3;
-  --accent-color: transparent;   
-}
-
-/* Остальные стили */
-
-@media (prefers-color-scheme: light) {
-:root {
-      /* Дублируем переменные светлой темы */    
-  }
-}
-
-/* Остальные стили */ 
-
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #ff8dcb;
+  --bg-color: #fff1f7;/*--main-color*/
+  --text-color: #ffc2e6;/*hero-page-text-color*/
+  --text-color-main: #353430; /*text-color*/
+  --outline-color: rgba(50, 49, 45, 0.4);
+  --background: url(../images/cover-image-light.png);
+  --light_bulb: hidden;
+  /*--lead-title-color: inherit;
+  --title-color: inherit;
+  --subtitle-color: inherit;*/
+}
+
+@media (prefers-color-scheme: light) {
+:root {
+  --accent-color: #ff8dcb;
+  --bg-color: #fff1f7;/*--main-color*/
+  --text-color: #ffc2e6;/*hero-page-text-color*/
+  --text-color-main: #353430; /*text-color*/
+  --outline-color: rgba(50, 49, 45, 0.4);
+  --background: url(../images/cover-image-light.png);
+  --light_bulb: hidden;
+  /*--lead-title-color: inherit;
+  --title-color: inherit;
+  --subtitle-color: inherit;*/  
+  }
 }

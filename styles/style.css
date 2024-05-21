@@ -49,6 +49,7 @@
   left: 304px;
   top: 10px;
   color: var(--accent-color);
+  visibility: var(--light_bulb);
 }
 .light_bulb::after { /*кружок*/
   content: "";

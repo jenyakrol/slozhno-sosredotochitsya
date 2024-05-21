@@ -7,9 +7,10 @@
   --accent-color: #ff0070;
   --bg-color: #000028;/*--main-color*/
   --text-color: #DB00FF;/*hero-page-text-color*/
-  --text-color-main: #f1b2ce;
-  --padding-header: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
+  --text-color-main: #f1b2ce; /*text-color*/
   --outline-color: rgba(255, 0, 112, 0.4);
+  --background: url(../images/cover-image-dark.png);
+  --light_bulb: visible;
 
  /* --padding: 2.66vw;*/
   /*--accent-color: transparent;*/
