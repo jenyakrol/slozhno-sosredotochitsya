@@ -8,6 +8,7 @@
     <meta name="color-scheme" content="dark light" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -54,12 +55,12 @@
           надо
         </p>
       </div>
-      <div class="header__decoration"></div>
+      <span class="header__decoration" aria-hidden="true"></span>
     </header>
     <main class="sections">
-      <section class="section section_with-column">
+      <section class="section section__reasons">
         <h2 class="section__title">Почему сосредоточиться так сложно</h2>
-        <div class="section__column">
+        <div class="section__article-list">
           <article class="section__article">
             <h3 class="section__article-title">Многозадачность</h3>
             <p class="section__article-text">
@@ -70,6 +71,7 @@
               <a
                 href="https://dana.org/article/multicosts-of-multitasking/"
                 class="section__article-link"
+                target="_blank"
                 >выяснили</a
               >, что мозгу тяжело концентрироваться даже на двух делах
               одновременно. А когда в поле внимания попадает несколько важных
@@ -93,9 +95,9 @@
           </article>
         </div>
       </section>
-      <section class="section section__reasons">
+      <section class="section section__factors">
         <h2 class="section__title">Что снижает концентрацию внимания?</h2>
-        <div class="section__row">
+        <div class="section__transformable-direction-list">
           <article class="section__article">
             <h3 class="section__article-title">Многозадачность</h3>
             <p class="section__article-text">
@@ -132,17 +134,15 @@
           </article>
         </div>
       </section>
-      <section class="section section_with-column">
+      <section class="section section__solutions">
         <h2 class="section__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <div class="section__column">
-          <article class="section__article">
-            <h3 class="section__article-title">
-              5 простых (на самом деле не очень) советов
-            </h3>
-          </article>
+        <div class="section__article-list">
+          <h3 class="section__title">
+            5 простых (на самом деле не очень) советов
+          </h3>
           <article class="section__article">
             <h4 class="section__article-title section__article-subtitle">
               Представьте небо и облака
@@ -178,6 +178,7 @@
               <a
                 href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
                 class="section__article-link"
+                target="_blank"
                 >показал</a
               >, что созерцание природы повышает концентрацию, в то время как
               после просмотра городских пейзажей она наоборот понижается. Можно
