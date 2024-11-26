@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   justify-content: center;
   gap: var(--page-gap);
-  padding: var(--page-padding);
+  padding: 0 var(--page-padding);
   font-family: "IBM Plex mono", monospace;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -21,8 +21,9 @@
     ". nav ."
     "title title title"
     "description description description";
-  height: calc(100vh - var(--page-padding));
+  height: 100vh;
   min-height: 668px;
+  padding-top: var(--page-padding);
 }
 
 .decorated-zone::before {
@@ -115,7 +116,7 @@
 
 .header__decoration {
   position: absolute;
-  top: 1px;
+  top: calc(var(--page-padding) + 2px);
   right: 20px;
 }
 
@@ -294,9 +295,10 @@
   display: grid;
   grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
   grid-template-rows: 1fr var(--font-size) 1fr;
-  height: calc(100vh - calc(var(--page-padding) + 5px));
+  height: calc(100vh - 5px);
   min-height: 668px;
   padding-top: calc(var(--page-padding) - 12px);
+  padding-bottom: calc(var(--page-padding) + 5px);
 }
 
 .footer__title {
@@ -323,6 +325,7 @@
 
   .header__theme-menu-list {
     flex-direction: column;
+    gap: 15px;
   }
 
   .section__reasons,
